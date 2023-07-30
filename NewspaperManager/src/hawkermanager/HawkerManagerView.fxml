@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hawkermanager.HawkerManagerViewController">
+   <children>
+      <Label layoutX="236.0" layoutY="63.0" text="Hawker Manager" underline="true">
+         <font>
+            <Font name="Century Gothic Bold Italic" size="39.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="598.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Dropbox/nodejs_my_june/Project/public/pics/paperboy-newspaper-vector-graphics-illustration-png-favpng-QxAWr3Haf44zsmiN7PxiJJ3Ed_t.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="41.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Dropbox/nodejs_my_june/Project/public/pics/clipart-banana-arm-17.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="141.0" layoutY="178.0" text="Hawker Name ">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="141.0" layoutY="264.0" text="Mobile Number ">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtMobile" layoutX="140.0" layoutY="307.0" prefHeight="26.0" prefWidth="164.0" />
+      <Button layoutX="327.0" layoutY="181.0" mnemonicParsing="false" onAction="#doSearch" text="Search">
+         <font>
+            <Font size="13.0" />
+         </font></Button>
+      <Label layoutX="141.0" layoutY="345.0" text="Address">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtAddress" layoutX="141.0" layoutY="387.0" prefHeight="26.0" prefWidth="538.0" />
+      <Label layoutX="141.0" layoutY="356.0">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboHawker" editable="true" layoutX="140.0" layoutY="221.0" prefHeight="26.0" prefWidth="164.0" />
+      <Label layoutX="141.0" layoutY="438.0" prefHeight="31.0" prefWidth="110.0" text="Areas">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+     
+      
+      <ComboBox fx:id="comboAreas" editable="true" layoutX="140.0" layoutY="481.0" onAction="#doAppendAreas" prefHeight="26.0" prefWidth="164.0" />
+      <Label layoutX="353.0" layoutY="438.0" text="Allocated Areas">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtAllocatedAreas" layoutX="353.0" layoutY="481.0" prefHeight="26.0" prefWidth="328.0" />
+      <Button layoutX="458.0" layoutY="307.0" mnemonicParsing="false" onAction="#doUpload" text="Upload Pic" />
+      <ImageView fx:id="ppic" fitHeight="128.0" fitWidth="154.0" layoutX="436.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Dropbox/nodejs_my_june/Project/public/pics/OIP.jpeg" />
+         </image>
+      </ImageView>
+      <Label layoutX="133.0" layoutY="547.0" text="Adhaar Card Number">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtAdhaar" layoutX="132.0" layoutY="590.0" prefHeight="26.0" prefWidth="210.0" />
+      <Button layoutX="140.0" layoutY="681.0" mnemonicParsing="false" onAction="#doEnroll" text="Enroll">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="430.0" layoutY="681.0" mnemonicParsing="false" onAction="#doDismiss" text="Dismiss">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="280.0" layoutY="681.0" mnemonicParsing="false" onAction="#doUpdate" text="Update">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="601.0" layoutY="681.0" mnemonicParsing="false" onAction="#doView" text="View">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Label fx:id="picpath" layoutX="481.0" layoutY="632.0" text="Pic Path" visible="false" />
+      <Label fx:id="lblres" layoutX="383.0" layoutY="716.0" text="*" />
+   </children>
+</AnchorPane>

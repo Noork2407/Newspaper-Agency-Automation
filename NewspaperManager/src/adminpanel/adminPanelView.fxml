@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="733.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adminpanel.adminPanelViewController">
+   <children>
+      <Label layoutX="259.0" layoutY="261.0" text="Admin Desk" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="38.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="143.0" fitWidth="138.0" layoutX="22.0" layoutY="122.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Dropbox/nodejs_my_june/Project/public/pics/newspaper.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="38.0" layoutY="222.0" mnemonicParsing="false" onAction="#doOpenPaperMaster" text="Paper Master" />
+      <ImageView fitHeight="132.0" fitWidth="125.0" layoutX="200.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Dropbox/nodejs_my_june/Project/public/pics/4231343.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="222.0" layoutY="153.0" mnemonicParsing="false" onAction="#doOpenAreaMaster" text="Area Master" />
+      <ImageView fitHeight="143.0" fitWidth="138.0" layoutX="406.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Dropbox/nodejs_my_june/Project/public/pics/clipart-banana-arm-17.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="406.0" layoutY="153.0" mnemonicParsing="false" onAction="#doOpenHawkerManager" text="Hawker Manager" />
+      <ImageView fitHeight="107.0" fitWidth="102.0" layoutX="577.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Dropbox/nodejs_my_june/Project/public/pics/User_Customers.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="574.0" layoutY="222.0" mnemonicParsing="false" onAction="#doOpenCustomerManager" text="Customer Master" />
+      <ImageView fitHeight="143.0" fitWidth="138.0" layoutX="138.0" layoutY="495.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Dropbox/nodejs_my_june/Project/public/pics/OIP%20(2).jpeg" />
+         </image>
+      </ImageView>
+      <Button layoutX="145.0" layoutY="652.0" mnemonicParsing="false" onAction="#doOpenBillGenerators" text="Bill Generator" />
+      <ImageView fitHeight="138.0" fitWidth="125.0" layoutX="24.0" layoutY="309.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Dropbox/nodejs_my_june/Project/public/pics/OIP.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="40.0" layoutY="444.0" mnemonicParsing="false" onAction="#doOpenBillCollector" text="Bill Collector" />
+      <ImageView fitHeight="143.0" fitWidth="138.0" layoutX="559.0" layoutY="306.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Dropbox/nodejs_my_june/Project/public/pics/R%20(2).png" />
+         </image>
+      </ImageView>
+      <Button layoutX="582.0" layoutY="444.0" mnemonicParsing="false" onAction="#doOpenBillTables" text="Bill Status" />
+      <ImageView fitHeight="143.0" fitWidth="138.0" layoutX="327.0" layoutY="544.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Dropbox/nodejs_my_june/Project/public/pics/R%20(1).png" />
+         </image>
+      </ImageView>
+      <Button layoutX="324.0" layoutY="698.0" mnemonicParsing="false" onAction="#doOpenHawkerTable" text="Display Hawkers" />
+      <ImageView fitHeight="143.0" fitWidth="138.0" layoutX="490.0" layoutY="498.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Dropbox/nodejs_my_june/Project/public/pics/1595767.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="517.0" layoutY="652.0" mnemonicParsing="false" onAction="#doOpenCustomerTable" text="Customer Googler" />
+      <Button layoutX="302.0" layoutY="342.0" mnemonicParsing="false" onAction="#doOpenDevloperInfo" text="About The Developer" />
+   </children>
+</AnchorPane>

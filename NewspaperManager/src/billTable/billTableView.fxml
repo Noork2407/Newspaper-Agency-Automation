@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="billTable.billTableViewController">
+   <children>
+      <Label layoutX="300.0" layoutY="47.0" text="Bill Board" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="32.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="chkPending" layoutX="68.0" layoutY="122.0" mnemonicParsing="false" text="Pending">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="chkStatus" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="chkPaid" layoutX="178.0" layoutY="122.0" mnemonicParsing="false" text="Paid" toggleGroup="$chkStatus">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </RadioButton>
+      <Button layoutX="263.0" layoutY="118.0" mnemonicParsing="false" onAction="#doSearchStatus" text="Search">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Separator layoutX="375.0" layoutY="95.0" orientation="VERTICAL" prefHeight="79.0" prefWidth="0.0" />
+      <Label layoutX="402.0" layoutY="121.0" text="Mobile">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtMobile" layoutX="463.0" layoutY="118.0" prefHeight="26.0" prefWidth="141.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Button layoutX="626.0" layoutY="117.0" mnemonicParsing="false" onAction="#doGetHistory" text="Bill History">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Separator layoutX="35.0" layoutY="173.0" prefHeight="2.0" prefWidth="686.0" />
+      <TableView fx:id="tbl" layoutX="175.0" layoutY="174.0" prefHeight="352.0" prefWidth="400.0" />
+      <Button layoutX="152.0" layoutY="572.0" mnemonicParsing="false" onAction="#doExport" text="Export" />
+      <Label layoutX="416.0" layoutY="572.0" text="Total Bill :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtBill" layoutX="512.0" layoutY="566.0" prefHeight="26.0" prefWidth="141.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="664.0" layoutY="572.0" text="Rs.">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblres" layoutX="364.0" layoutY="617.0" text="*" />
+   </children>
+</AnchorPane>
